@@ -16,6 +16,8 @@ cd from_scratch && uv run python train_moons.py
 **Result:** 92.6% training accuracy after 8000 epochs of full-batch gradient
 descent. Saves a decision boundary plot to `decision_boundary.png`.
 
+![Decision boundary](from_scratch/decision_boundary.png)
+
 ## pytorch_cnn/
 
 Two CNNs built with PyTorch.
@@ -38,6 +40,8 @@ cd pytorch_cnn && uv run python train_cifar.py
 ```
 
 **Result:** 88.5% test accuracy.
+
+![CIFAR-10 training curve](pytorch_cnn/cifar_training_curve.png)
 
 Both training scripts download their dataset automatically on first run
 (into `pytorch_cnn/data/`, gitignored) and save trained weights as `.pt`
